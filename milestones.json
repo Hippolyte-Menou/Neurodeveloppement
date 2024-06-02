@@ -1,0 +1,106 @@
+{
+  "Motricité Globale": {
+    "Relève la tête": [0, 1],
+    "Sur le ventre, lève la tête 45°": [0.5, 2],
+
+    "Assis tête stable": [1.5, 3.5],
+    "Sur le ventre, lève la tête 90°": [2, 4],
+    "Tourne du ventre au dos": [2, 5],
+    "Tourne du dos au ventre": [4, 7],
+    "Assis avec soutien": [3, 6],
+    "Assis sans soutien": [5, 8],
+    "Se tient debout avec soutien": [5, 9],
+    "Rampe": [7, 10],
+    "Se met debout avec aide": [8, 11],
+    "Marche avec soutien": [9, 12],
+    "Se met debout sans aide": [10, 14],
+    "Marche seul": [11, 15],
+    "Monte des escaliers en tenant la main": [12, 18],
+    "Court": [14, 20],
+    "Se penche et se relève": [15, 21],
+    "Monte sur un meuble": [16, 22],
+    "Marche en arrière": [17, 23],
+    "Monte des escaliers seul (marche alternée)": [18, 24],
+    "Saute sur place": [24, 30],
+    "Pédale sur un tricycle": [30, 36]
+  },
+  "Motricité Fine": {
+    "Suit des yeux un objet à 180 degrés": [0.5, 2.5],
+    "Suit des yeux une clochette": [1, 3],
+    "Suit des yeux un objet horizontalement": [2, 4],
+    "Joue avec ses mains": [2, 5],
+    "Tend la main vers un objet": [3, 6],
+    "Attrape un objet en utilisant un mouvement râteau": [4, 7],
+    "Tient un objet dans chaque main": [4.5, 7],
+    "Secoue un hochet": [5, 8],
+    "Transfère un objet d'une main à l'autre": [5.5, 8.5],
+    "Préhension pouce-index débutante": [6, 9],
+    "Relâche volontairement un objet": [6, 10],
+    "Saisit un petit objet entre le pouce et l'index": [8, 11],
+    "Frappe deux cubes ensemble": [8.5, 12],
+    "Mets des objets dans un récipient": [9, 13],
+    "Pince fine précise": [10, 12],
+    "Tourne les pages d'un livre (plusieurs à la fois)": [11, 14],
+    "Empile deux cubes": [12, 15],
+    "Empile trois cubes": [13, 18],
+    "Empile quatre cubes": [15, 21],
+    "Tourne les pages d'un livre (une à une)": [16, 22],
+    "Empile six cubes": [18, 24],
+    "Dessine un trait vertical": [21, 24],
+    "Dessine un cercle": [28, 36],
+    "Imite un pont de cubes": [30, 36],
+    "Enfile des perles": [30, 36]
+  },
+  "Langage": {
+    "Gazouille": [1, 4],
+    "Rires": [2, 4],
+    "Vocalise des consonnes": [3, 6],
+    "Babille": [4, 6],
+    "Réagit au nom": [5, 8],
+    "Dit 'mama' ou 'papa' (non spécifique)": [6, 10],
+    "Imite des sons": [8, 10],
+    "Dit 'mama' ou 'papa' (spécifique)": [9, 14],
+    "Dit un mot autre que 'mama' ou 'papa'": [10, 14],
+    "Dit deux mots autres que 'mama' ou 'papa'": [12, 16],
+    "Suit une commande simple sans geste": [12, 18],
+    "Dit trois mots autres que 'mama' ou 'papa'": [14, 20],
+    "Utilise 6 mots": [17, 21],
+    "Utilise des phrases de deux mots": [18, 24],
+    "Suit une commande à deux étapes": [22, 30],
+    "Dit des phrases de trois mots": [24, 30],
+    "Utilise des pronoms correctement": [24, 36],
+    "Connait 50 mots": [24, 36],
+    "Connait les parties du corps": [24, 36],
+    "Connait son nom": [30, 36]
+
+  },
+  "Contact Social": {
+    "Sourit en réponse": [1, 3],
+    "Sourit spontanément": [2, 4],
+    "Suit du regard un visage": [1, 4],
+    "Imite des expressions faciales": [3, 6],
+    "Réagit aux personnes familières": [4, 6],
+    "Rit aux éclats": [4, 6],
+    "Joue avec ses mains": [4, 7],
+    "Joue à cache-cache": [6, 9],
+    "Joue à faire des coucous": [7, 10],
+    "Fait signe de la main pour dire au revoir": [8, 12],
+    "Tape des mains": [9, 12],
+    "Imite des actions simples": [9, 14],
+    "Boit dans une tasse": [12, 15],
+    "Utilise une cuillère correctement": [15, 18],
+    "S'habille avec aide": [18, 24],
+    "Imite des jeux domestiques": [18, 24],
+    "Joue avec d'autres enfants": [24, 30],
+    "S'habille sans aide": [30, 36],
+    "Se brosse les dents avec aide": [30, 36],
+    "Joue à des jeux de rôle": [30, 36]
+
+}
+
+}
+
+
+
+
+
