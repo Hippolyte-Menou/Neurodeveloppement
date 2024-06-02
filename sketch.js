@@ -21,6 +21,7 @@ let colours = {"Motricité Globale": "#7BD3EA",
 
 function preload() {
   milestones = loadJSON('milestones.json');
+  milestones_phrases = loadJSON("milestones_phrases.json")
 }
 
 function setup() {
@@ -44,7 +45,7 @@ function setup() {
   dvlp_dyn.position(850, 150)
   dvlp_dyn.style("padding", "1em")
   
-  
+  console.log(milestones_phrases)  
 }
 
 function draw() {
@@ -121,8 +122,9 @@ function get_dyn_dvlp(){
      output_text += `<br>${to_sentence[panels[i].title]} il/elle `
     for (let j in panels[i].milestones){
       m = panels[i].milestones[j]
+      
       if (m.toggled){
-        output_text += `${m.display_name.toLowerCase()}, `
+        output_text += `${milestones_phrases[panels[i].title][m.display_name][0]}, `
           }
         }
     }
