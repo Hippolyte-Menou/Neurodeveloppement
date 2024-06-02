@@ -36,27 +36,22 @@ function setup() {
   }
   
   copy_button = createButton('Copier');
-  copy_button.position(880, 140);
+  copy_button.position(865, 140);
   copy_button.size(200);
-  // when the button is pressed, execute the change function
   copy_button.mousePressed(copyStringToClipboard);
   
   dvlp_dyn = createP("Concernant le développement psychomoteur,")
   dvlp_dyn.position(850, 150)
-  dvlp_dyn.style("padding", "1em")
-  
-  console.log(milestones_phrases)  
-}
+  dvlp_dyn.style("padding", "15px")
+  }
 
 function draw() {
   background(255);
   age.update()
   draw_panels()
   draw_reset()
-  
-  
+
   dvlp_dyn.html(get_dyn_dvlp())
-  
   
 }
 
