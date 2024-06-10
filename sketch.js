@@ -117,10 +117,14 @@ function get_dyn_dvlp(){
      output_text += `<br>${to_sentence[panels[i].title]} il/elle `
     for (let j in panels[i].milestones){
       m = panels[i].milestones[j]
-      
-      if (m.toggled){
-        if (m.){}
+      if (m.toggled == 1){
         output_text += `${milestones_phrases[panels[i].title][m.display_name][0]}, `
+          }
+        }
+    for (let j in panels[i].milestones){
+      m = panels[i].milestones[j]
+      if (m.toggled == 2){
+        output_text += `${milestones_phrases[panels[i].title][m.display_name][2]}, `
           }
         }
     }
