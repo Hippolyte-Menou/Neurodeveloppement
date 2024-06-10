@@ -36,9 +36,13 @@ function setup() {
   }
   
   copy_button = createButton('Copier');
-  copy_button.position(865, 140);
+  copy_button.position(1000, 140);
   copy_button.size(200);
   copy_button.mousePressed(copyStringToClipboard);
+  
+  checkbox = createCheckbox("Avec l'âge");
+  checkbox.position(865, 145);
+  
   
   dvlp_dyn = createP("Concernant le développement psychomoteur,")
   dvlp_dyn.position(850, 150)
@@ -50,7 +54,7 @@ function draw() {
   age.update()
   draw_panels()
   draw_reset()
-
+  
   dvlp_dyn.html(get_dyn_dvlp())
   
 }
@@ -118,7 +122,11 @@ function get_dyn_dvlp(){
     for (let j in panels[i].milestones){
       m = panels[i].milestones[j]
       if (m.toggled == 1){
-        output_text += `${milestones_phrases[panels[i].title][m.display_name][0]}, `
+        if (checkbox.checked()) {
+          output_text += `${milestones_phrases[panels[i].title][m.display_name][1]}, `
+        } else {
+          output_text += `${milestones_phrases[panels[i].title][m.display_name][0]}, `    
+        }
           }
         }
     for (let j in panels[i].milestones){
