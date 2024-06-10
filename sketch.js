@@ -93,9 +93,11 @@ function mousePressed(){
   for (let i in panels){
     for (let j in panels[i].milestones){
       m = panels[i].milestones[j]
-      if (mouseX >= m.min_x && mouseX <= m.max_x && mouseY >= m.y_pos-12 && mouseY <= m.y_pos+12){
-        m.toggle()
-        }
+      if (panels[i].mstones_to_show.includes(m)){
+        if (mouseX >= m.min_x && mouseX <= m.max_x && mouseY >= m.y_pos-12 && mouseY <= m.y_pos+12){
+          m.toggle()
+          }
+      }
     }
   }
 }
