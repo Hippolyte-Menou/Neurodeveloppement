@@ -2,7 +2,7 @@ class Milestone {
   constructor(display_name, y_pos, min_age, max_age, colour) {
     this.display_name = display_name;
     this.y_pos = y_pos
-    this.toggled = false;
+    this.toggled = 0;
     this.min_age = min_age;
     this.max_age = max_age;
     this.mean_age = (this.min_age + this.max_age) / 2
@@ -22,7 +22,7 @@ class Milestone {
   
   draw_box(){
     push()
-    if (this.toggled) {stroke(2)} else {noStroke()}
+    if (this.toggled == 1) {stroke(2)} else if (this.toggled == 2) {stroke(255, 0, 0)} else {noStroke()}
     rectMode(CENTER);
     fill(this.colour)
     this.h = 25; // Height
@@ -42,6 +42,6 @@ class Milestone {
   }
 
   toggle() {
-    this.toggled = !this.toggled;
+    this.toggled = (this.toggled + 1) %3;
   }
 }
