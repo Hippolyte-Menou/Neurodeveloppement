@@ -119,6 +119,7 @@ function get_dyn_dvlp(){
       m = panels[i].milestones[j]
       
       if (m.toggled){
+        if (m.){}
         output_text += `${milestones_phrases[panels[i].title][m.display_name][0]}, `
           }
         }
