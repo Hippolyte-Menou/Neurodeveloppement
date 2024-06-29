@@ -9,6 +9,7 @@ let output_text
 let side_panel = 80
 let start_y
 let explainer
+
 let dvlp_normal
 let dvlp_dyn
 let dlvp_basic
@@ -36,12 +37,15 @@ function setup() {
   }
   
   copy_button = createButton('Copier');
-  copy_button.position(1000, 140);
+  copy_button.position(1300, 140);
   copy_button.size(200);
   copy_button.mousePressed(copyStringToClipboard);
   
   checkbox = createCheckbox("Avec l'âge");
-  checkbox.position(865, 145);
+  checkbox.position(1100, 145);
+  
+  pro_nom = createInput('Il'); // TODO random IL/ELLE/Prénom
+  pro_nom.position(865, 145);
   
   
   dvlp_dyn = createP("Concernant le développement psychomoteur,")
@@ -116,11 +120,12 @@ function mouseReleased(){
 }
 
 function get_dyn_dvlp(){
+  let pro_nom_txt = pro_nom.value()
   let to_sentence = {"Motricité Globale": "Sur le plan de la motricité globale, ", "Motricité Fine": "Sur le plan de la motricité fine, ", "Langage": "Sur le plan du langage, ", "Contact Social": "Sur le plan du contact social, "}
   output_text = `Concernant le  developpement psychomoteur de l'enfant ... évalué(e) à un âge de ${age.texte} : <br>`
-  output_text += "<br>Il/Elle a marché à ... mois, dit ses premiers mots (autre que papa/mama) à l'âge de ..., dit une phrase à ... ans<br>"
+  output_text += `<br>${pro_nom_txt} a marché à ... mois, dit ses premiers mots (autre que papa/mama) à l'âge de ..., dit une phrase à ... ans<br>`
   for (let i in panels){
-     output_text += `<br>${to_sentence[panels[i].title]} il/elle `
+     output_text += `<br>${to_sentence[panels[i].title]} ${pro_nom_txt} `
     for (let j in panels[i].milestones){
       m = panels[i].milestones[j]
       if (m.toggled == 1){
