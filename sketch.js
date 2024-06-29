@@ -153,12 +153,12 @@ function write_text(h){
   pop()
 }
 
-function keyPressed() {
+/* function keyPressed() {
   if (key === 'c') {
     copyStringToClipboard (output_text);
   }
 
-}
+}*/
 
 function reset_dvlp(){
   for (let i in panels){
